@@ -1,0 +1,8 @@
+[services.api]
+  source = "apps/api"
+  startCommand = "npm start"
+
+[services.web]
+  source = "apps/web"
+  buildCommand = "npm run build"
+  startCommand = "npm start"

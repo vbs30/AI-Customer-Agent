@@ -4,7 +4,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai'
 
 const app = Fastify({ logger: true })
 const genai = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!)
-const model = genai.getGenerativeModel({ model: 'gemini-1.5-flash' })
+const model = genai.getGenerativeModel({ model: 'gemini-2.0-flash' })
 
 app.get('/health', async () => ({ status: 'ok' }))
 

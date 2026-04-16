@@ -20,6 +20,9 @@
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
+    "@qdrant/js-client-rest": "^1.17.0",
+    "axios": "^1.15.0",
+    "cheerio": "^1.2.0",
     "dotenv": "^17.4.1",
     "fastify": "^5.8.4"
   }

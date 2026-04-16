@@ -26,9 +26,9 @@ function chunkText(text: string, size: number = CHUNK_SIZE): string[] {
 
 // Embed a single chunk using Gemini text-embedding-004
 async function embedText(text: string): Promise<number[]> {
-    const model = genai.getGenerativeModel({ model: 'text-embedding-004' })
-    const result = await model.embedContent(text)
-    return result.embedding.values
+  const model = genai.getGenerativeModel({ model: 'gemini-embedding-001' })
+  const result = await model.embedContent(text)
+  return result.embedding.values
 }
 
 // Ensure Qdrant collection exists
